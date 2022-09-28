@@ -1,0 +1,253 @@
+* {
+  background-color: whitesmoke;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/*--------------------------------- Introduction ------------------------------------*/
+.header {
+  align-items: center;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-rows: 80px 200px;
+  grid-template-columns: 200px 200px 200px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+
+.header {
+  grid-column: 1 / 4;
+  grid-row-start: 2;
+  margin: 80px;
+  word-wrap: break-word;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.headshot {
+  grid-column: 4 / 5;
+  grid-row: 2 / 5;
+  margin: 40px;
+  align-items: center;
+  background-color: rgb(34, 70, 102);
+}
+
+.headshot img {
+  border-radius: 10px;
+}
+
+/*-------------------------------------------------- Menu bar ----------------------------------------*/
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  font-size: 20px;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-color: gray;
+  margin-bottom: 40px;
+  padding: 0px;
+  width: 100%;
+}
+
+.flex-container ul {
+  list-style: none;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+}
+
+.flex-container li {
+  padding-right: 20px;
+  background-color: white;
+}
+
+.flex-container a:hover {
+  text-decoration: none;
+  color: rgb(34, 70, 102);
+}
+
+.flex-container a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+/*------------------------------------------------ Work Section ------------------------------*/
+
+.grid-container2 {
+  display: grid;
+  width: 100%;
+  row-gap: 30px;
+  column-gap: 15px;
+  background-color: rgb(34, 70, 102);
+  grid-template-columns: 33% 33% 33%;
+  padding-bottom: 80px;
+}
+
+.grid-container2 h5,
+.grid-container2 h6,
+.grid-container2 a,
+.grid-container2 h2 {
+  background-color: rgb(34, 70, 102);
+  color: white;
+}
+
+.work-header {
+  font-size: 25px;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  padding-top: 60px;
+  text-align: center;
+  background-color: rgb(34, 70, 102);
+}
+
+.casework,
+.jp,
+.ants {
+  grid-row-start: 3;
+}
+
+.casework {
+  grid-column: 1;
+}
+
+.jp {
+  grid-column: 2;
+}
+
+.ants {
+  grid-column: 3;
+}
+
+#casework-img,
+#jp-img,
+#ants-img {
+  background-color: rgb(34, 70, 102);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#casework-desc,
+#jp-desc,
+#ants-desc {
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.grid-container2 div {
+  background-color: rgb(34, 70, 102);
+}
+
+/*----------------------------------- About Section -------------------------------------------*/
+
+.things-about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-header {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 25px;
+  margin-bottom: 80px;
+}
+
+.hobbies,
+.interests,
+.fun {
+  border-radius: 6%;
+  border: solid rgb(34, 70, 102);
+  width: 175px;
+  background-color: rgb(34, 70, 102);
+  margin-bottom: 10%;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.fun {
+  width: 480px;
+  border-radius: 4%;
+}
+
+.hobbies ul,
+.interests ul,
+.fun ul,
+h4,
+p {
+  background-color: rgb(34, 70, 102);
+  color: white;
+}
+
+h4 {
+  padding-left: 22px;
+}
+
+/*----------------------------------- Contact Section -------------------------------------------*/
+
+.contact,
+form,
+label,
+.contact a,
+.contact h2 {
+  background-color: rgb(34, 70, 102);
+  color: white;
+  text-align: center;
+}
+
+.contact-header {
+  margin-top: 80px;
+  font-size: 25px;
+  margin-bottom: 40px;
+  margin-top: 12px;
+}
+
+.contact {
+  margin-bottom: 80px;
+  padding-top: 12px;
+  padding-bottom: 25px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.name,
+.email,
+.reason {
+  margin-bottom: 40px;
+  background-color: rgb(34, 70, 102);
+  color: white;
+}
+
+/* --------------------------------Home button-------------------------------------- */
+
+.home-button a,
+button {
+  background-color: rgb(34, 70, 102);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.home-button {
+  text-align: center;
+  margin-bottom: 80px;
+}

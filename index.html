@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html land="en">
+  <head>
+    <title>Aayushi Chaudhry</title>
+    <meta name="author" content="Aayushi Chaudhry" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!---------------------------------------- Menu ------------------------------------------>
+    <div class="flex-container">
+      <ul>
+        <li>
+            <a href="#Work">Work</a>
+          </li>
+          <li>
+            <a href="#About">About</a>
+          </li>
+          <li>
+            <a href="#Contact">Contact</a>
+          </li>
+        </ul>
+    </div>
+    
+    <!---------------------------------------------- Home ----------------------------------------------->
+    <div class="grid-container1">
+      <div class="header">
+        <a id="Home"><h1>Aayushi Chaudhry</h1></a>
+        <h3>
+          Studying Computer Science and Data Science with a concentration in
+          Business and Industrial Analytics @ UC Berkeley
+        </h3>
+        <a href="https://github.com/aayushichaudhry" target="_blank"
+          ><img src="github-sign.png" alt="github" height="25px"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/aayushi-chaudhry-11a515213"
+          target="_blank"
+          ><img src="linkedin.png" alt="linkedin" height="25px"
+        /></a>
+        <a href="Aayushi-Chaudhry-Resume.pdf" target="_blank"
+          ><img src="resume.png" alt="resume" height="25px"
+        /></a>
+      </div>
+      <div class="headshot">
+        <img src="headshot.jpg" alt="headshot" height="400px" />
+      </div>
+    </div>
+    
+    <!---------------------------------------------- Work --------------------------------------------------->
+    <div class="grid-container2">
+      <div class="work-header">
+        <a id="Work"><h2>Work</h2></a>
+      </div>
+      <div class="casework">
+          <img id="casework-img" src="casework.png" alt="Casework and Custody" height="250px">
+          <div id="casework-desc">
+            <h5>Casework and Custody through the League of Women Voters San Diego</h5>
+            <h6>I organized a panel targeting the discussion of the disproportionality of 
+              resources for children of color in the foster care system. There was a turnout of 70 
+              people. The panelists included two foster children experiencing the disproportionality 
+              first hand, a social worker, and the Director of Human and Health Services.</h6>
+          </div>
+      </div>
+      <div class="jp">
+          <img id="jp-img" src="jp-morgan-virtual.png" alt="jp-morgan" height="250px" >
+          <div id="jp-desc">
+            <h5>JP Morgan Virtual Internship</h5>
+            <h6>I was tasked with three objectives. First, I had to set up my own system for the 
+              analysis of the stock data. Second, I had to implement the Perspective open source code 
+              in prepartion for data visualization. Lastly, I used Perspective to create a chart for 
+              the user trading dashboard.</h6>
+          </div>
+      </div>
+      <div class="ants">
+          <img id="ants-img" src="ants.png" alt="ants" height="250px">
+          <div id="ants-desc">
+            <h5>Computer Science 61a project Ants</h5>
+            <h6>Implemented the game above using Python to sharpen my skills in topics like iteration, 
+              recursion, and object oriented programming.</h6>
+          </div>
+      </div>
+    </div>
+
+    <!-------------------------------------------------- About ----------------------------------------->
+    <div class="about-header">
+      <a id="About"><h2>About</h2></a>
+    </div>
+    <div class="things-about-me">
+    <div class="hobbies">
+      <h4>Hobbies:</h4>
+      <ul>
+        <li>
+          <p>Drawing</p>
+        </li>
+        <li>
+          <p>Baking</p>
+        </li>
+        <li>
+          <p>Long drives</p>
+        </li>
+        <li>
+          <p>Traveling</p>
+        </li>
+      </ul>
+    </div>
+    <div class="fun">
+      <h4>Fun Facts:</h4>
+      <ul>
+        <li>
+          <p>I have been dancing for 10 years!</p>
+        </li>
+        <li>
+          <p>I am in love with chocolate.</p>
+        </li>
+        <li>
+          <p>I love to try new food places.</p>
+        </li>
+        <li>
+          <p>I love solving puzzles and playing games like Sudoku.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="interests">
+      <h4>Interests:</h4>
+      <ul>
+        <li>
+          <p>Real Esate</p>
+        </li>
+        <li>
+          <p>Web Dev</p>
+        </li>
+        <li>
+          <p>Teaching</p>
+        </li>
+        <li>
+          <p>Data Analytics</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<!-------------------------------- Contact ------------------------------------------>
+  <div class="contact">
+    <div class="contact-header">
+      <a id="Contact"><h2>Contact Me!</h2></a>
+    </div>
+      <form class="form">
+      <div class="name">
+        <label>Name:</label>
+        <br />
+        <input type="text" id="name" size=50/>
+        <br />
+      </div>
+      <div class="email">
+        <label>Email:</label>
+        <br />
+        <input type="text" id="email" size=50/>
+        <br />
+      </div>
+      <div class="reason">
+        <label>Reason for contact?</label>
+        <br />
+        <textarea rows = "5" cols = "60" name = "description"></textarea>
+        <br />
+      </div>
+        <input id="submit" type="submit" value='Submit' style="height:50px; width:100px; background-color: rgb(66, 85, 184);
+         color:white; text-decoration: none; border: none;"/>
+  </div>
+
+  <script>
+    var btn = document.getElementById("submit")
+    btn.onclick = btnClick
+    function btnClick() {
+    alert("Form submitted! Be sure to check for emails from aayushi.chaudhry@berkeley.edu!")
+  }
+  </script>
+
+    <!-------------------------------------- Home Button ------------------------------------>
+  <div class="home-button">
+    <a href="#Home"><button>Back to home!</button></a>
+  </div>
+
+  </body>
+</html>
